@@ -71,6 +71,45 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-hexo简单教程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/08/23/hexo%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/" class="article-date">
+  <time class="dt-published" datetime="2022-08-23T09:13:02.000Z" itemprop="datePublished">2022-08-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/08/23/hexo%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/">使用 Hexo+GitHub 搭建个人免费博客教程</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>1.安装node和git：<br>Node.js：<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn">https://nodejs.org/zh-cn</a><br>Git：<a target="_blank" rel="noopener" href="https://git-scm.com/downloads">https://git-scm.com/downloads</a><br>2.创建 Github Pages 仓库<br>(1)New repository<br>(2)Repository name 中输入<br>用户名.github.io<br>(3)勾选 “Initialize this repository with a README”<br>(4)Description 选填<br>(5)填好后点击 Create repository 创建。<br>创建后默认自动启用 HTTPS，博客地址为：https:&#x2F;&#x2F;用户名.github.io<br>3.本地安装 Hexo<br>新建一个文件夹用来存放 Hexo 的程序文件，如 Hexo-Blog。打开该文件夹，右键 -&gt; Git Bash Here。<br>命令行输入：<br>npm install -g hexo-cli<br>hexo init      # 初始化<br>npm install    # 安装组件<br>4.部署 Hexo 到 GitHub Pages<br>(1)命令行输入：<br>npm install hexo-deployer-git –save<br>(2)修改 _config.yml 文件末尾的 Deployment 部分，修改成如下：<br>deploy:<br>  type: git<br>  repository: <a href="mailto:&#x67;&#x69;&#x74;&#x40;&#103;&#105;&#x74;&#104;&#x75;&#x62;&#46;&#x63;&#111;&#109;">&#x67;&#x69;&#x74;&#x40;&#103;&#105;&#x74;&#104;&#x75;&#x62;&#46;&#x63;&#111;&#109;</a>:用户名&#x2F;用户名.github.io.git<br>  branch: main<br>(3)完成后运行 hexo d 将网站上传部署到 GitHub Pages。访问我们的 GitHub 域名 https:&#x2F;&#x2F;用户名.github.io 就可以看到 Hexo 网站了。<br>5.发布文章<br>进入博客所在目录，右键打开 Git Bash Here，命令行输入：<br>hexo g   # 生成页面<br>hexo d   # 部署发布<br>6.常用命令<br>hexo new “name”       # 新建文章<br>hexo new page “name”  # 新建页面<br>hexo g                # 生成页面<br>hexo d                # 部署<br>hexo g -d             # 生成页面并部署<br>hexo s                # 本地预览<br>hexo clean            # 清除缓存和已生成的静态文件<br>hexo help             # 帮助</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/08/23/hexo%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/" data-id="cl75z08bp000008wg24qh9l4n" data-title="使用 Hexo+GitHub 搭建个人免费博客教程" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-git简单教程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/08/23/git%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/" class="article-date">
@@ -228,6 +267,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2022/08/23/hexo%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/">使用 Hexo+GitHub 搭建个人免费博客教程</a>
+          </li>
         
           <li>
             <a href="/2022/08/23/git%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/">git简单教程</a>
